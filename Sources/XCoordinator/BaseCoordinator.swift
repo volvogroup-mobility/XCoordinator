@@ -95,6 +95,7 @@ open class BaseCoordinator<RouteType: Route, TransitionType: TransitionProtocol>
     /// - Returns:
     ///     The prepared transition.
     ///
+    @MainActor
     open func prepareTransition(for route: RouteType) -> TransitionType {
         fatalError("Please override the \(#function) method.")
     }
@@ -193,6 +194,7 @@ extension BaseCoordinator {
     ///         The closure to be called whenever the transition completes.
     ///         Hint: Might be called multiple times but only once per performing the transition.
     ///
+    @MainActor
     public func registerInteractiveTransition<GestureRecognizer: UIGestureRecognizer>(
         for route: RouteType,
         triggeredBy recognizer: GestureRecognizer,
@@ -238,6 +240,7 @@ extension BaseCoordinator {
     ///         The closure to be called whenever the transition completes.
     ///         Hint: Might be called multiple times but only once per performing the transition.
     ///
+    @MainActor
     public func registerInteractiveTransition<GestureRecognizer: UIGestureRecognizer>(
         for route: RouteType,
         triggeredBy recognizer: GestureRecognizer,
