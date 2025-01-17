@@ -2,10 +2,10 @@ Pod::Spec.new do |spec|
     spec.name         = 'XCoordinator'
     spec.version      = '2.2.2-abvolvo.1'
     spec.license      = { :type => 'MIT' }
-    spec.homepage     = 'https://github.com/quickbirdstudios/XCoordinator'
-    spec.authors      = { 'Stefan Kofler' => 'stefan.kofler@quickbirdstudios.com', 'Paul Kraft' => 'pauljohannes.kraft@quickbirdstudios.com' }
+    spec.homepage     = 'https://github.com/volvogroup-mobility'
+    spec.authors      = { 'Iryna Piskorska' => 'iryna.piskorska@volvo.com' }
     spec.summary      = 'Navigation framework based on coordinator pattern.'
-    spec.source       = { :git => 'https://github.com/quickbirdstudios/XCoordinator.git', :tag => spec.version }
+    spec.source       = { :git => 'https://github.com/volvogroup-mobility/XCoordinator.git', :tag => spec.version.to_s }
     spec.module_name = 'XCoordinator'
     spec.swift_version = '5.1'
     spec.ios.deployment_target = '9.0'
