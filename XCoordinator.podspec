@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
     spec.version      = '2.2.2-abvolvo.1'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/volvogroup-mobility'
-    spec.authors      = { 'Stefan Kofler' => 'stefan.kofler@quickbirdstudios.com', 'Paul Kraft' => 'pauljohannes.kraft@quickbirdstudios.com' }
+    spec.authors      = { 'Stefan Kofler' => 'stefan.kofler@quickbirdstudios.com', 'Paul Kraft' => 'pauljohannes.kraft@quickbirdstudios.com', 'Iryna Piskorska' => 'iryna.piskorska@volvo.com }
     spec.summary      = 'Navigation framework based on coordinator pattern.'
     spec.source       = { :git => 'https://github.com/volvogroup-mobility/XCoordinator.git', :tag => spec.version.to_s }
     spec.module_name = 'XCoordinator'
